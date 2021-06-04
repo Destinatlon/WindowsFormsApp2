@@ -35,6 +35,10 @@ namespace WindowsFormsApp2
             this.Employee = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Updatebtn = new System.Windows.Forms.Button();
+            this.legalCSV = new System.Windows.Forms.Button();
+            this.privateCSV = new System.Windows.Forms.Button();
+            this.employeeCSV = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +49,7 @@ namespace WindowsFormsApp2
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 188);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 215);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -94,19 +98,62 @@ namespace WindowsFormsApp2
             // 
             // Updatebtn
             // 
-            this.Updatebtn.Location = new System.Drawing.Point(286, 79);
+            this.Updatebtn.Location = new System.Drawing.Point(578, 79);
             this.Updatebtn.Name = "Updatebtn";
-            this.Updatebtn.Size = new System.Drawing.Size(716, 91);
+            this.Updatebtn.Size = new System.Drawing.Size(424, 91);
             this.Updatebtn.TabIndex = 5;
             this.Updatebtn.Text = "Изменение данных";
             this.Updatebtn.UseVisualStyleBackColor = true;
             this.Updatebtn.Click += new System.EventHandler(this.Updatebtn_Click);
+            // 
+            // legalCSV
+            // 
+            this.legalCSV.Location = new System.Drawing.Point(265, 79);
+            this.legalCSV.Name = "legalCSV";
+            this.legalCSV.Size = new System.Drawing.Size(201, 33);
+            this.legalCSV.TabIndex = 6;
+            this.legalCSV.Text = "Юридические лица";
+            this.legalCSV.UseVisualStyleBackColor = true;
+            this.legalCSV.Click += new System.EventHandler(this.legalCSV_Click);
+            // 
+            // privateCSV
+            // 
+            this.privateCSV.Location = new System.Drawing.Point(265, 113);
+            this.privateCSV.Name = "privateCSV";
+            this.privateCSV.Size = new System.Drawing.Size(201, 28);
+            this.privateCSV.TabIndex = 7;
+            this.privateCSV.Text = "Физические лица";
+            this.privateCSV.UseVisualStyleBackColor = true;
+            this.privateCSV.Click += new System.EventHandler(this.privateCSV_Click);
+            // 
+            // employeeCSV
+            // 
+            this.employeeCSV.Location = new System.Drawing.Point(265, 142);
+            this.employeeCSV.Name = "employeeCSV";
+            this.employeeCSV.Size = new System.Drawing.Size(201, 28);
+            this.employeeCSV.TabIndex = 8;
+            this.employeeCSV.Text = "Работники";
+            this.employeeCSV.UseVisualStyleBackColor = true;
+            this.employeeCSV.Click += new System.EventHandler(this.employeeCSV_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(271, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Генерировать таблицу в csv";
             // 
             // HR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.employeeCSV);
+            this.Controls.Add(this.privateCSV);
+            this.Controls.Add(this.legalCSV);
             this.Controls.Add(this.Updatebtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Employee);
@@ -131,5 +178,9 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Button Employee;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Updatebtn;
+        private System.Windows.Forms.Button legalCSV;
+        private System.Windows.Forms.Button privateCSV;
+        private System.Windows.Forms.Button employeeCSV;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -234,7 +234,7 @@ namespace WindowsFormsApp2
             if (Validation.IsVatNumber(row16.Text) != true)
             {
                 result = false;
-                attention += "\nTAX";
+                attention += "\nVAT";
             }
             if (result == false)
                 MessageBox.Show(attention);
